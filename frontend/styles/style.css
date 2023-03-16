@@ -4,6 +4,7 @@
   --white: white;
   --black: black;
   --gray: #666;
+  --navy: #27445c;
 }
 
 * {
@@ -14,7 +15,7 @@
 }
 
 body {
-  background-color: #27445c;
+  background-color: var(--gray);
 }
 
 /* Navbar */
@@ -23,16 +24,20 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--black);
-  height: 80px;
+  height: 70px;
   padding: 0 25px;
   box-shadow: 0px 2px 4px;
 }
 
 .navbar-logo a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
   color: var(--white);
+  padding-left: 10px;
+}
+.navbar-logo a span {
+  color: var(--navy);
 }
 
 .navbar-menu {
@@ -58,7 +63,7 @@ body {
 }
 
 .navbar-menu li a:hover {
-  color: #27445c;
+  color: var(--navy);
   font-size: 1.1rem;
 }
 
@@ -93,5 +98,52 @@ body {
   font-weight: 600;
 }
 .btn-login a:hover {
-  color: #27445c;
+  color: var(--navy);
+}
+
+/* Login Form */
+.form {
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  margin: 80px auto;
+  padding: 30px 20px;
+}
+
+.form_login {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 11pt;
+  margin-bottom: 20px;
+}
+
+.form_login:hover {
+  border: 3px solid;
+  transition-duration: 0.1s;
+}
+
+.LoginButton {
+  background-color: #46de4b;
+  color: white;
+  font-size: 11pt;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.LoginButton:hover {
+  background-color: #333;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  color: #232323;
+  text-decoration: none;
+  font-size: 10pt;
+  text-align: right;
 }
