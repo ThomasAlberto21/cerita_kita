@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --white: white;
@@ -10,7 +10,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #27445c;
 }
 
 /* Navbar */
@@ -21,6 +25,7 @@
   background-color: var(--black);
   height: 80px;
   padding: 0 25px;
+  box-shadow: 0px 2px 4px;
 }
 
 .navbar-logo a {
@@ -46,13 +51,15 @@
 .navbar-menu li a {
   text-decoration: none;
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 600;
   transition: color 0.3s ease;
+  transition: 0.2s;
 }
 
 .navbar-menu li a:hover {
-  color: var(--gray);
+  color: #27445c;
+  font-size: 1.1rem;
 }
 
 .hamburger-menu {
@@ -68,20 +75,23 @@
 }
 
 .btn-login {
-  padding: 10px 45px;
-  background-color: var(--white);
+  border: 1.5px solid white;
+  padding: 5px 20px;
   border-radius: 10px;
-  color: var(--black);
+  color: black;
+  transition: 0.2s;
 }
 
 .btn-login:hover {
-  background-color: var(--gray);
-  transition: 0.2s;
-  color: var(--white);
+  background-color: #202020dc;
+  color: white;
 }
 
 .btn-login a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
   font-weight: 600;
+}
+.btn-login a:hover {
+  color: #27445c;
 }
