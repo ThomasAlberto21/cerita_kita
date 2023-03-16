@@ -20,14 +20,14 @@
   align-items: center;
   background-color: var(--black);
   height: 80px;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
 .navbar-logo a {
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .navbar-menu {
@@ -45,9 +45,9 @@
 
 .navbar-menu li a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
@@ -65,4 +65,23 @@
   margin: 5px;
   background-color: var(--white);
   transition: transform 0.3s ease;
+}
+
+.btn-login {
+  padding: 10px 45px;
+  background-color: var(--white);
+  border-radius: 10px;
+  color: var(--black);
+}
+
+.btn-login:hover {
+  background-color: var(--gray);
+  transition: 0.2s;
+  color: var(--white);
+}
+
+.btn-login a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
 }
