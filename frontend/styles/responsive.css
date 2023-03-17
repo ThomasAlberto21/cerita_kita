@@ -44,7 +44,6 @@
     height: calc(100vh - 80px);
     background-color: var(--black);
     z-index: 1;
-    padding: 20px;
   }
 
   .navbar-menu.active li {
