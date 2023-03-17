@@ -18,12 +18,12 @@ if ($login_cek > 0 ) {
         $_SESSION['pass'] = $pass;
         header('location:location:../frontend/index.php');
     }else{
-         echo "<script>alert('Nik Atau Nama Salah!');
-	  window.location.href='../frontend/register.php';
+         echo "<script>alert('Gagal!');
+	  window.location.href='../frontend/Register.php';;
 	  </script>";
     }
 }else{
-    echo "<script>alert('Nik Atau Nama Salah!');
+    echo "<script>alert('Login Gagal!');
 	  history.go(-1)
 	  </script>";
 }
