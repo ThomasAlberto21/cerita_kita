@@ -11,8 +11,7 @@ $epass = password_hash($pass, PASSWORD_DEFAULT);
 $register = mysqli_query($conn,"INSERT INTO user (email,username,pass) values ('$email','$username','$epass')");
 
 if ($register) {
-    header('location:location:../frontend/index.php');
-
+    header('location:../frontend/Login.php');
 }else{
     echo "<script>alert('Register Gagal!');
 	  window.location.href='../frontend/Register.php';
