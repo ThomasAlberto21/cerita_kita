@@ -52,8 +52,13 @@
   }
 
   .navbar-menu.active li a {
-    font-size: 1.5rem;
     text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .navbar-menu li a:hover {
+    color: var(--navy);
+    font-size: 2rem;
   }
 
   .btn-login.active {
@@ -113,8 +118,12 @@
     text-align: center;
   }
 
+  .navbar-menu li a:hover {
+    color: var(--navy);
+    font-size: 1.1rem;
+  }
+
   .navbar-menu.active li a {
-    font-size: 1.5rem;
     text-align: center;
   }
 
