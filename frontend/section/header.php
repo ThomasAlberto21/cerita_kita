@@ -39,7 +39,7 @@ if(!isset($_SESSION['username'])){
       </div>
 
   <div class="btn-login" id="logout">
-      <a href="../backend/Logout.php">Logout</a>
+      <a href="../frontend/Login.php">Logout</a>
           </div>
 
     </nav>

@@ -17,7 +17,7 @@
   <body>
       <div class="form">
         <h1>Login</h1>
-        <form action="../backend/login_Proses.php" method="POST">
+        <form action="../backend/admin/auth/login_Proses.php" method="POST">
           <label>Username</label>
           <input
             id="username"
