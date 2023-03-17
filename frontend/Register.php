@@ -13,7 +13,7 @@
   <body>
     <div class="form">
       <h1>Register</h1>
-      <form action="register.php" method="POST">
+      <form action="../backend/Register_Proses.php" method="POST">
         <label>Email</label>
         <input
           id="email"
@@ -48,7 +48,7 @@
         </div>
         <br />
         <br />
-        <button class="LoginButton">Register</button>
+        <button type="submit" name="register" class="LoginButton">Register</button>
         <p style="text-align: center;">Sudah Punya Akun ? <a href="login.php">Login</a></p>
       </form>
     </div>

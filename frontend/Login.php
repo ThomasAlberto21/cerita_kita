@@ -17,7 +17,7 @@
   <body>
       <div class="form">
         <h1>Login</h1>
-        <form action="login_Proses.php" method="POST">
+        <form action="../backend/login_Proses.php" method="POST">
           <label>Username</label>
           <input
             id="username"
@@ -41,7 +41,7 @@
           </div>
           <br />
           <br />
-          <button class="LoginButton">Login</button>
+          <button type="submit" name="login" class="LoginButton">Login</button>
           <p>Tidak Punya Akun ? <a href="register.php">Register</a></p>
         </form>
       </div>
