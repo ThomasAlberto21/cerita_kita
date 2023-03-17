@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +17,7 @@
   <body>
       <div class="form">
         <h1>Login</h1>
-        <form action="login.php" method="POST">
+        <form action="login_Proses.php" method="POST">
           <label>Username</label>
           <input
             id="username"

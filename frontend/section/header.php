@@ -32,6 +32,6 @@
       </div>
 
       <div class="btn-login">
-        <a href="Login.html">Login</a>
+        <a href="./Login.php">Login</a>
       </div>
     </nav>
