@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+  header('locaation:../Login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,19 +26,20 @@
       <div class="navbar-logo">
         <a href="#">Cerita<span> Kita</span></a>
       </div>
-      <ul class="navbar-menu">
+      <ul class="navbar-menu"> 
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Activity</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu">  
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
 
-      <div class="btn-login">
-        <a href="./Login.php">Login</a>
-      </div>
+  <div class="btn-login" id="logout">
+      <a href="../backend/Logout.php">Logout</a>
+          </div>
+
     </nav>

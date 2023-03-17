@@ -1,7 +1,7 @@
 <?php
-include 'section/header.php'; 
+include 'section/header.php'; ?>
 
- ?>
 <!-- ++ -->
+
 
 <?php include 'section/footer.php'; ?>
