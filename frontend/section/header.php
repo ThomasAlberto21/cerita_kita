@@ -35,7 +35,3 @@
         <a href="Login.html">Login</a>
       </div>
     </nav>
-
-    <script src="script/index.js"></script>
-  </body>
-</html>
