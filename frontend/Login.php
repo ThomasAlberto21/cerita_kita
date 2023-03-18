@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,7 +24,7 @@
             name="username"
             class="form_login"
             placeholder="Username"
-            require
+            required
           />
           <label>Password</label>
           <input
@@ -34,7 +33,7 @@
             name="pass"
             class="form_login"
             placeholder="Enter Your Password"
-            require
+            required
           />
           <div class="hide_show" onclick="change()">
             <i class="fa-solid fa-eye" id="eye"></i>
@@ -42,7 +41,6 @@
           <br />
           <br />
           <button type="submit" name="login" class="LoginButton">Login</button>
-          <p>Tidak Punya Akun ? <a href="register.php">Register</a></p>
         </form>
       </div>
 

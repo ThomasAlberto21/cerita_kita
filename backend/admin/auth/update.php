@@ -3,7 +3,7 @@
 		session_start();
 		require '../conn.php';
 		if (!isset($_SESSION['username'])) {
-			echo "<script>alert('Anda Belum Login');window.location.href='../../../frontend/Login.php'</script>";
+         echo "<script>alert('Silahkan Login Terlebih Dahulu!');window.location.href='../../../frontend/Login.php'</script>";
 		}
  ?>
 <!DOCTYPE html>
@@ -17,19 +17,41 @@
     <link rel="stylesheet" href="../../../frontend/styles/Login_Register.css" />
     <title>Register</title>
   </head>
+  <style>
+    @keyframes fade-inout {
+        0%{opacity :1;}
+        50%{opacity :0.5;}
+        50%{opacity :0.5;}
+        100%{opacity :0;}
+        
+
+    }
+    .alert{
+        animation: fade-inout 2s linear forwards;
+        text-align :center;
+        color: green;
+    }
+  </style>
   <body>
     <div class="form">
       <h1>Register</h1>
+      <div class="alert">
+          <?php if(isset($_SESSION['status'])) {
+              echo $_SESSION['status'];}?>
+      </div>
+      <?php unset($_SESSION['status']); ?>
       <form action="Password_Change.php" method="POST">
         <label>Email</label>
-        <input id="email" type="text" name="email" class="form_login" value = "<?php echo $_SESSION['email'];?>"  require/>
+        <input id="email" type="text" name="email" class="form_login" value = "<?php echo $_SESSION['email']; ?>" required/>
         <label>Username</label>
         <input id="username" type="text" name="username" class="form_login" value = "<?php echo $_SESSION['username'];?>" require/>
         <label>Password</label>
         <input id="password" type="password" name="pass_old" class="form_login" placeholder="Enter Your Password" require />
         <div class="hide_show" onclick="change()">
-          <i class="fa-solid fa-eye" id="eye"></i>
+            <i class="fa-solid fa-eye" id="eye"></i>
         </div>
+        <br> 
+        <label>Password</label>
         <input id="password" type="password" name="new_pass" class="form_login" placeholder="Repeat Your Password" require />
         <div class="hide_show" onclick="change()">
           <i class="fa-solid fa-eye" id="eye"></i>
