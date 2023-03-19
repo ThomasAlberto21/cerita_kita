@@ -1,3 +1,9 @@
+<?php  
+ session_start();
+ if(isset($_SESSION['username'])){
+  header('location:../backend/admin/auth/update.php');
+ }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

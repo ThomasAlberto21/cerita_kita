@@ -3,8 +3,9 @@
 		session_start();
 		require '../conn.php';
 		if (!isset($_SESSION['username'])) {
-         echo "<script>alert('Silahkan Login Terlebih Dahulu!');window.location.href='../../../frontend/Login.php'</script>";
+        echo "<script>alert('Silahkan Login Terlebih Dahulu!');window.location.href='sesi.php'</script>";
 		}
+        
  ?>
 <!DOCTYPE html>
 <html lang="en">
