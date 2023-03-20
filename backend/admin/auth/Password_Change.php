@@ -10,7 +10,7 @@ $username = $_POST['username'];
 $pass_old = $_POST['pass_old'];
 $new_pass = $_POST['new_pass'];
 
-// if($pwd == $c_pwd) :
+// if($pass_old == $new_pass) :
 // if($pwd!=$old_pwd) :
 
 $login = mysqli_query($conn,"SELECT * FROM user WHERE username = '$usernames'");

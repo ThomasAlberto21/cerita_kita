@@ -3,7 +3,7 @@
 		session_start();
 		require '../conn.php';
 		if (!isset($_SESSION['username'])) {
-        echo "<script>alert('Silahkan Login Terlebih Dahulu!');window.location.href='sesi.php'</script>";
+        echo "<script>alert('Silahkan Login Terlebih Dahulu!');window.location.href='Session.php'</script>";
 		}
         
  ?>
@@ -43,7 +43,7 @@
       <?php unset($_SESSION['status']); ?>
       <form action="Password_Change.php" method="POST">
         <label>Email</label>
-        <input id="email" type="text" name="email" class="form_login" value = "<?php echo $_SESSION['email']; ?>" required/>
+        <input id="email" type="text" name="email" class="form_login" value = "<?php echo $_SESSION['email']; ?>" >
         <label>Username</label>
         <input id="username" type="text" name="username" class="form_login" value = "<?php echo $_SESSION['username'];?>" require/>
         <label>Password</label>
