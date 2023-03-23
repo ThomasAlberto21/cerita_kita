@@ -87,6 +87,15 @@
     text-align: center;
     letter-spacing: 0.2em;
   }
+
+  /* About */
+  .about_section .left {
+    padding-right: 20%;
+  }
+
+  .about_section .right img {
+    display: none;
+  }
 }
 
 /* smartphone */
@@ -190,5 +199,14 @@
 
   .jumbotron .title button {
     margin-top: 10px;
+  }
+
+  /* About */
+  .about_section .right img {
+    display: none;
+  }
+
+  .about_section .left {
+    padding-right: 0;
   }
 }

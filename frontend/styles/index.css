@@ -148,3 +148,37 @@ body {
   color: var(--white);
   text-decoration: none;
 }
+
+/* About */
+.about_section {
+  padding: 0 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.about_section .left {
+  padding-right: 15%;
+}
+
+.about_section .left .vision {
+  margin-top: 20px;
+}
+
+.about_section .left .mission {
+  margin-top: 20px;
+}
+
+.about_section .right img {
+  width: 32em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Activity */
+.activity{
+  padding: 0 30px;
+}
