@@ -6,6 +6,10 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 50px;
+  }
+
   .navbar-menu {
     display: none;
   }
@@ -68,12 +72,32 @@
     left: auto;
     z-index: 1;
   }
+
+  /* Jumbotron */
+  .jumbotron .title h2 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 45px;
+  }
+
+  .jumbotron .title p {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
 }
 
 /* smartphone */
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
   .navbar-menu {
     display: none;
+    margin-top: -10px;
   }
 
   .btn-login {
@@ -132,5 +156,39 @@
     top: 80px;
     left: auto;
     z-index: 1;
+  }
+
+  /* Jumbotron */
+  .jumbotron .title {
+    padding: 190px 15px;
+    text-align: left;
+  }
+
+  .jumbotron .title h1 {
+    font-family: 'Caveat', cursive;
+    color: var(--white);
+    text-align: left;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.05em;
+  }
+
+  .jumbotron .title h2 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .jumbotron .title p {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0.2em;
+  }
+
+  .jumbotron .title button {
+    margin-top: 10px;
   }
 }
