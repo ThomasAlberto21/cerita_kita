@@ -107,11 +107,11 @@
     font-size: 20px;
     text-align: center;
   }
-  .carousel-container {
+  .activity .splide {
     overflow-x: hidden;
   }
-  .activity .carousel-container .card {
-    width: 380px;
+  .activity .splide .card {
+    width: 375px;
     height: 350px;
     margin: 0 10px;
     padding: 10px;
@@ -239,13 +239,13 @@
     font-size: 12px;
     text-align: center;
   }
-  .carousel-container {
+  .activity .splide {
     overflow-x: hidden;
   }
-  .activity .carousel-container .card {
-    width: 350px;
+  .activity .splide .card {
+    width: 330px;
     height: 350px;
-    margin-right: 10px;
+    margin: 0 5px;
     padding: 10px;
   }
 }
