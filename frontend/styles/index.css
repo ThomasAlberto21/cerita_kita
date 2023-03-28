@@ -195,7 +195,7 @@ body {
 
 .carousel-container {
   position: relative;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .carousel {
@@ -208,7 +208,7 @@ body {
 .card {
   flex-shrink: 0;
   margin-right: 10px;
-  padding: 20px;
+  padding: 25px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -226,6 +226,12 @@ body {
 .card h3 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.card h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .card p {
