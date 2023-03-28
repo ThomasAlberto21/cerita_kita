@@ -107,11 +107,9 @@
     font-size: 20px;
     text-align: center;
   }
-  .activity .splide {
-    overflow-x: hidden;
-  }
-  .activity .splide .card {
-    width: 375px;
+
+  .activity .card {
+    width: 370px;
     height: 350px;
     margin: 0 10px;
     padding: 10px;
@@ -239,11 +237,9 @@
     font-size: 12px;
     text-align: center;
   }
-  .activity .splide {
-    overflow-x: hidden;
-  }
-  .activity .splide .card {
-    width: 330px;
+
+  .activity .card {
+    width: 340px;
     height: 350px;
     margin: 0 5px;
     padding: 10px;

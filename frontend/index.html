@@ -98,137 +98,37 @@
           cerita kita are as follows
         </p>
       </div>
-      <div class="splide">
-        <div class="splide__track">
-          <div class="splide__list">
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_1.png" alt="Image 1" />
-                <h3>Card Title 1</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
-
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_2.png" alt="Image 2" />
-                <h3>Card Title 2</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
-
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_3.png" alt="Image 2" />
-                <h3>Card Title 2</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
-
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_1.png" alt="Image 2" />
-                <h3>Card Title 2</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
-
-            <!-- Page 2 -->
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_2.png" alt="Image 2" />
-                <h3>Card Title 2</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
-
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_3.png" alt="Image 2" />
-                <h3>Card Title 2</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
-
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_1.png" alt="Image 2" />
-                <h3>Card Title 2</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
-
-            <div class="splide__slide">
-              <div class="card">
-                <img src="images/activity_img_2.png" alt="Image 2" />
-                <h3>Card Title 2</h3>
-                <h5>Jumat , 24 Maret 2023</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis error labore ratione ab repellat id molestias et,
-                  explicabo nemo dolor!
-                </p>
-              </div>
-            </div>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="card">
+            <img src="images/activity_img_1.png" alt="Card Image">
+            <h3>Card Title</h3>
+            <p>Card Description</p>
+          </div>
+          <div class="card">
+            <img src="images/activity_img_2.png" alt="Card Image">
+            <h3>Card Title</h3>
+            <p>Card Description</p>
+          </div>
+          <div class="card">
+            <img src="images/activity_img_3.png" alt="Card Image">
+            <h3>Card Title</h3>
+            <p>Card Description</p>
+          </div>
+          <div class="card">
+            <img src="images/activity_img_1.png" alt="Card Image">
+            <h3>Card Title</h3>
+            <p>Card Description</p>
           </div>
         </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
       </div>
     </div>
 
     <script src="script/index.js"></script>
 
-    <!-- Splide js -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-    <script type="text/javascript">
-      var splide = new Splide('.splide', {
-        rewind: true,
-        perPage: 3,
-        type: 'loop',
-        arrows: false,
-        pagination: false,
-        breakpoints: {
-          1024: { perPage: 2 },
-          640: { perPage: 1 },
-        },
-      });
-
-      splide.mount();
+   
     </script>
   </body>
 </html>
