@@ -114,6 +114,11 @@
     margin: 0 10px;
     padding: 10px;
   }
+
+  /* Contact us */
+  form {
+    padding: 0 50px;
+  }
 }
 
 /* smartphone */
@@ -243,5 +248,10 @@
     height: 350px;
     margin: 0 5px;
     padding: 10px;
+  }
+
+  /* Contact us */
+  form {
+    padding: 0;
   }
 }
