@@ -5,34 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Link css -->
+    <!-- link css -->
     <link rel="stylesheet" href="styles/index.css" />
 
     <!-- link responsive css -->
     <link rel="stylesheet" href="styles/responsive.css" />
 
+    <!-- Font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/44aef23333.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Cerita Kita</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <div class="navbar">
       <div class="navbar-logo">
-        <a href="#">Cerita<span> Kita</span></a>
+        <a href="#">Cerita Kita</a>
       </div>
-      <ul class="navbar-menu"> 
+      <ul class="navbar-menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Activity</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <div class="hamburger-menu">  
+      <div class="hamburger-menu">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
+    </div>
 
-  <div class="btn-login" id="logout">
-      <a href="../frontend/Login.php">Logout</a>
-          </div>
-
-    </nav>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="title">
+        <h1>Cerita Kita</h1>
+        <h2>Melangkah ke satu tujuan</h2>
+        <p>Pulang membawa pesan</p>
+        <button ><a href="#">Learn More</a></button>
+      </div>
+    </div>
