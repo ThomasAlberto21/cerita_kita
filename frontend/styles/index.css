@@ -61,6 +61,7 @@ body {
 
 .navbar-menu li a:hover {
   font-size: 1.1rem;
+  color: #27445c;
 }
 
 .hamburger-menu {
@@ -142,6 +143,7 @@ body {
   border: 2px solid var(--white);
   border-radius: 10px;
   margin-top: 10px;
+  /* background-color: #27445c; */
 }
 
 .jumbotron .title button a {
