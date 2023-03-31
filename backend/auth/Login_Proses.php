@@ -23,12 +23,12 @@ if ($cek > 0) {
 	   header('location:update.php');
     }else{
         echo "<script>alert('Username Atau Password Salah!');
-	window.location.href='../../../frontend/Login.php';
+	window.location.href='../../frontend/Login.php';
 	</script>";
     }
 }else{
 	echo "<script>alert('Username Atau Password Salah!');
-	window.location.href='../../../frontend/Login.php';
+	window.location.href='../../frontend/Login.php';
 	</script>";
 }
  ?>
