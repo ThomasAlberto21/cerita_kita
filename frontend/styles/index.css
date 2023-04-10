@@ -12,6 +12,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -76,25 +77,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.btn-login {
-  border: 1.5px solid white;
-  padding: 5px 35px;
-  border-radius: 10px;
-  color: var(--black);
-  transition: 0.2s;
-}
-
-.btn-login:hover {
-  background-color: #202020dc;
-  color: white;
-}
-
-.btn-login a {
-  text-decoration: none;
-  color: var(--white);
-  font-weight: 600;
-}
-
 /* Jumbotron */
 .jumbotron {
   background-image: url('../images/jumbotron.png');
@@ -137,19 +119,7 @@ body {
   letter-spacing: 0.2em;
 }
 
-.jumbotron .title button {
-  background-color: transparent;
-  padding: 10px 30px;
-  border: 2px solid var(--white);
-  border-radius: 10px;
-  margin-top: 10px;
-  /* background-color: #27445c; */
-}
 
-.jumbotron .title button a {
-  color: var(--white);
-  text-decoration: none;
-}
 
 /* About */
 .container {
