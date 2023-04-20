@@ -1,35 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-:root {
-  --white: white;
-  --black: black;
-  --gray: #666;
-  --navy: #27445c;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-image: url("../images/riam_merasap.jpg");
+  background-image: url('../images/riam_merasap.jpg');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 /* Login Form */
 
 .form {
   width: 350px;
-  background: var(--white);
+  background: white;
   border-radius: 10px;
   margin: 80px auto;
-  padding: 30px 20px;
+  padding: 50px 20px;
 }
 
 .form_login {
@@ -41,8 +35,8 @@ body {
 }
 
 .LoginButton {
-  background-color: var(--navy);
-  color: var(--white);
+  background-color: black;
+  color: white;
   font-size: 11pt;
   width: 100%;
   border: none;
@@ -61,11 +55,11 @@ body {
 h1 {
   text-align: center;
   text-transform: uppercase;
-  color: var(--navy);
+  color: black;
 }
 
 p {
-  color: var(--black);
+  color: black;
   text-decoration: none;
   font-size: 10pt;
   text-align: right;
@@ -80,5 +74,10 @@ p {
 }
 
 .hide_show i {
-  color: var(--navy);
+  color: black;
+}
+
+a {
+  float: right;
+  margin-top: 10px;
 }

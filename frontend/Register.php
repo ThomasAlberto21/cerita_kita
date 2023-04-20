@@ -26,7 +26,7 @@
         <br />
         <br />
         <button type="submit" name="register" class="LoginButton">Register</button>
-        <p style="text-align: center;">Sudah Punya Akun ? <a href="login.php">Login</a></p>
+        <a href="Login.php">Sudah Punya Akun?</a>
       </form>
     </div>
 
