@@ -10,20 +10,21 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 // Activity
-const carousel = document.querySelector(".carousel");
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
 let scrollLeft = 0;
 
-prevBtn.addEventListener("click", () => {
+prevBtn.addEventListener('click', () => {
   carousel.scrollLeft -= carousel.offsetWidth;
 });
 
-nextBtn.addEventListener("click", () => {
+nextBtn.addEventListener('click', () => {
   carousel.scrollLeft += carousel.offsetWidth;
 });
 
-carousel.addEventListener("scroll", () => {
+carousel.addEventListener('scroll', () => {
   scrollLeft = carousel.scrollLeft;
 });
+

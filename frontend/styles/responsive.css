@@ -1,9 +1,3 @@
-:root {
-  --white: white;
-  --black: black;
-  --gray: #666;
-}
-
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
@@ -21,7 +15,7 @@
   .hamburger-menu {
     display: block;
     cursor: pointer;
-    color: var(--white);
+    color: white;
   }
 
   .hamburger-menu.active .bar:first-child {
@@ -46,7 +40,7 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: var(--black);
+    background-color: black;
     z-index: 1;
   }
 
@@ -61,7 +55,7 @@
   }
 
   .navbar-menu li a:hover {
-    color: var(--navy);
+    color: navy;
     font-size: 2rem;
   }
 
@@ -75,13 +69,13 @@
 
   /* Jumbotron */
   .jumbotron .title h2 {
-    color: var(--white);
+    color: navy;
     font-weight: 600;
     font-size: 45px;
   }
 
   .jumbotron .title p {
-    color: var(--white);
+    color: white;
     font-weight: 500;
     font-size: 25px;
     text-align: center;
@@ -139,7 +133,7 @@
   .hamburger-menu {
     display: block;
     cursor: pointer;
-    color: var(--white);
+    color: white;
   }
 
   .hamburger-menu.active .bar:first-child {
@@ -164,7 +158,7 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: var(--black);
+    background-color: black;
     z-index: 1;
     padding: 20px;
   }
@@ -175,7 +169,7 @@
   }
 
   .navbar-menu li a:hover {
-    color: var(--navy);
+    color: rgb(133, 133, 133);
     font-size: 1.1rem;
   }
 
@@ -198,7 +192,7 @@
 
   .jumbotron .title h1 {
     font-family: 'Caveat', cursive;
-    color: var(--white);
+    color: white;
     text-align: left;
     font-weight: 400;
     font-size: 35px;
@@ -206,14 +200,14 @@
   }
 
   .jumbotron .title h2 {
-    color: var(--white);
+    color: white;
     font-weight: 600;
     font-size: 40px;
     text-align: left;
   }
 
   .jumbotron .title p {
-    color: var(--white);
+    color: white;
     font-weight: 500;
     font-size: 20px;
     text-align: left;
