@@ -3,11 +3,11 @@ include_once 'conn.php';
 // Check if the form was submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check if file was uploaded without errors
-    if(isset($_FILES["anyfile"]) && $_FILES["anyfile"]["error"] == 0){
+    if(isset($_FILES["gambar"]) && $_FILES["gambar"]["error"] == 0){
         $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
-        $filename = $_FILES["anyfile"]["name"];
-        $filetype = $_FILES["anyfile"]["type"];
-        $filesize = $_FILES["anyfile"]["size"];
+        $filename = $_FILES["gambar"]["name"];
+        $filetype = $_FILES["gambar"]["type"];
+        $filesize = $_FILES["gambar"]["size"];
      
         // Validate file extension
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(file_exists("../images/" . $filename)){
                 echo $filename . " is already exists.";
             } else{
-                if(move_uploaded_file($_FILES["anyfile"]["tmp_name"], "../frontend/images/" . $filename)){
+                if(move_uploaded_file($_FILES["gambar"]["tmp_name"], "../frontend/images/" . $filename)){
  
                     $sql="INSERT INTO foto (foto) VALUES('../images/$filename')";
                      
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             echo "Error: There was a problem uploading your file. Please try again."; 
         }
     } else{
-        echo "Error: " . $_FILES["anyfile"]["error"];
+        echo "Error: " . $_FILES["gambar"]["error"];
     }
 }
 ?>

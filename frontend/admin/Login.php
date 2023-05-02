@@ -1,7 +1,7 @@
 <?php  
  session_start();
  if(isset($_SESSION['username'])){
-  header('location:../backend/admin/auth/update.php');
+  header('location:../../backend/admin/auth/update.php');
  }
 ?>
 <!DOCTYPE html>
@@ -12,17 +12,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Link css -->
-    <link rel="stylesheet" href="styles/Login_Register.css" />
+    <link rel="stylesheet" href="../styles/Login_Register.css" />
 
     <!-- link responsive css -->
-    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
 
     <title>Login</title>
   </head>
   <body>
     <div class="form">
       <h1>Login</h1>
-      <form action="../backend/admin/auth/login_Proses.php" method="POST">
+      <form action="../../backend/admin/auth/login_Proses.php" method="POST">
         <label>Username</label>
         <input
           id="username"
@@ -53,7 +53,7 @@
     </div>
 
     <!-- Script JS -->
-    <script src="script/Login_Register.js"></script>
+    <script src="../script/Login_Register.js"></script>
 
     <!-- Script Font Awesome -->
     <script

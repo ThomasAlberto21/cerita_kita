@@ -22,7 +22,6 @@
   $data = mysqli_query($conn,"select * from foto");
   while($d = mysqli_fetch_array($data)){
     ?>
-<!-- <img src="../images/20230331102007.jpg" alt="" srcset=""> -->
   <fieldset>
                     <img src="<?php echo $d['foto']?>" class="img-fluid" alt="">
                     <fieldset>
