@@ -1,7 +1,7 @@
 <?php  
  session_start();
  if(isset($_SESSION['username'])){
-  header('location:../../backend/admin/auth/update.php');
+  header('location:index.php');
  }
 ?>
 <!DOCTYPE html>
@@ -22,25 +22,11 @@
   <body>
     <div class="form">
       <h1>Login</h1>
-      <form action="../../backend/admin/auth/login_Proses.php" method="POST">
+      <form action="../../backend/auth/login_Proses.php" method="POST">
         <label>Username</label>
-        <input
-          id="username"
-          type="text"
-          name="username"
-          class="form_login"
-          placeholder="Username"
-          required
-        />
+        <input id="username" type="text" name="username" class="form_login" placeholder="Username" required/>
         <label>Password</label>
-        <input
-          id="password"
-          type="password"
-          name="pass"
-          class="form_login"
-          placeholder="Enter Your Password"
-          required
-        />
+        <input id="password" type="password" name="password" class="form_login" placeholder="Enter Your Password" required/>
         <div class="hide_show" onclick="change()">
           <i class="fa-solid fa-eye" id="eye"></i>
         </div>
@@ -49,7 +35,7 @@
         <button type="submit" name="login" class="LoginButton">Login</button>
       </form>
 
-      <a href="Register.html">Belum Punya Akun?</a>
+      <a href="Register.php">Belum Punya Akun?</a>
     </div>
 
     <!-- Script JS -->

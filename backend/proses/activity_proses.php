@@ -1,34 +1,35 @@
 <?php
 include_once '../conn.php';
-// Check if the form was submitted
+// meriksa apakah form dikirm
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $judul = $_POST['judul'];
-    $tanggal = $_POST['tanggal'];
-    $keterangan = $_POST['keterangan'];
-    // Check if file was uploaded without errors
+    // meriksa apakah file diupload tanpa kesalahan
     if(isset($_FILES["gambar"]) && $_FILES["gambar"]["error"] == 0){
+        $judul = $_POST['judul'];
+        $tanggal = $_POST['tanggal'];
+        $keterangan = $_POST['keterangan'];
+        
         $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
         $filename = $_FILES["gambar"]["name"];
         $filetype = $_FILES["gambar"]["type"];
         $filesize = $_FILES["gambar"]["size"];
      
-        // Validate file extension
+        // validasi extention file
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
-        if(!array_key_exists($ext, $allowed)) die("Error: Please select a valid file format.");
+        if(!array_key_exists($ext, $allowed)) die("Error: Harap Pilih Format File Image.");
      
-        // Validate file size - 10MB maximum
+        // validasi ukuran file
         $maxsize = 10 * 1024 * 1024;
-        if($filesize > $maxsize) die("Error: File size is larger than the allowed limit.");
+        if($filesize > $maxsize) die("Error: Ukuran File Terlalu Besar");
      
-        // Validate type of the file
+        // validasi tipe file
         if(in_array($filetype, $allowed)){
-            // Check whether file exists before uploading it
+            // meriksa apakah file sebelumnya sudah ada
             if(file_exists("../images/" . $filename)){
                 echo $filename . " is already exists.";
             } else{
                 if(move_uploaded_file($_FILES["gambar"]["tmp_name"], "../../frontend/images/" . $filename)){
  
-                    $sql="INSERT INTO activity (judul,tanggal,keterangan,foto) VALUES('','','','../images/$filename')";
+                    $sql="INSERT INTO activity(judul,keterangan,tanggal,foto) VALUES('$judul','$tanggal','$keterangan','../images/$filename')";
                      
                     mysqli_query($conn,$sql);
  

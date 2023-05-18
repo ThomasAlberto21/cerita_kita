@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
 session_start();
 require '../conn.php';
 if (!isset($_SESSION['username'])) {
   echo "<script>alert('Silahkan Login Terlebih Dahulu!');window.location.href='Session.php'</script>";
 }
 
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 

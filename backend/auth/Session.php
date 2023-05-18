@@ -6,7 +6,7 @@ if (isset($_SESSION['username'])) {
 } else {
     if (!isset($_SESSION['username'])) {
         echo "<script>alert('Silahkan Login Terlebih Dahulu!');</script>";
-        header('location:../../frontend/Login.php');
+        header('location:../../frontend/admin/Login.php');
     }
 }
 ?>

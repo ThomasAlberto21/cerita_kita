@@ -61,7 +61,7 @@
           while($d = mysqli_fetch_array($data)){
             ?>
           <div class="card">
-            <img src="<?php echo $d['foto']?>" alt="Card Image" />
+            <img src="<?php echo $d['foto']?>" style= "width: 350px; height: 180px; object-fit: cover;border-radius: 8px;" alt="Card Image" />
             <h3><?php echo $d['judul']?></h3>
             <h5><?php echo $d['tanggal']?></h5>
             <p>
