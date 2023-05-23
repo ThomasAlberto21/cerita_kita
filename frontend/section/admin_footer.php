@@ -5,5 +5,7 @@
     </div>
 
     <script src="../script/index.js"></script>
+    <script src="../script/Login_Register.js"></script>
+
   </body>
 </html>

@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $judul = $_POST['judul'];
         $tanggal = $_POST['tanggal'];
         $keterangan = $_POST['keterangan'];
-        
+
         $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
         $filename = $_FILES["gambar"]["name"];
         $filetype = $_FILES["gambar"]["type"];
@@ -34,14 +34,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     mysqli_query($conn,$sql);
  
                     echo "Your file was uploaded successfully.";
+                    echo "<script>alert('Data Berhasil Ditambahkan');
+                    window.location.href='../../frontend/admin/Login.php';
+                    </script>";
                 }else{
  
-                   echo "File is not uploaded";
+                    echo '<script type="text/javascript">alert("Ada Kesalahan Saat Mengupload. Silahkan Coba Lagi");window.history.go(-1);</script>';
+
                 }
                  
             } 
         } else{
-            echo "Error: There was a problem uploading your file. Please try again."; 
+            echo '<script type="text/javascript">alert("Ada Kesalahan Saat Mengupload. Silahkan Coba Lagi");window.history.go(-1);</script>';
         }
     } else{
         echo "Error: " . $_FILES["gambar"]["error"];

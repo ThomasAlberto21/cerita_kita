@@ -1,5 +1,5 @@
     <!-- Contact Us -->
-    <div class="contact-us">
+    <div id="contact" class="contact-us">
       <div class="title">
         <h1>Contact Us</h1>
         <p>Contact us with any suggestions and input for our community</p>
@@ -47,5 +47,6 @@
     </div>
 
     <script src="script/index.js"></script>
+    
   </body>
 </html>

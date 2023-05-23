@@ -9,18 +9,11 @@ if (!isset($_SESSION['username'])) {
 ?>
 
   <?php include '../section/admin_header.php' ?>
+  
   <style>
-  @keyframes fade-inout {
+  @keyframes pesan {
     0% {
       opacity: 1;
-    }
-
-    50% {
-      opacity: 0.5;
-    }
-
-    50% {
-      opacity: 0.5;
     }
 
     100% {
@@ -29,26 +22,50 @@ if (!isset($_SESSION['username'])) {
 
 
   }
+  @keyframes nama {
+    0% {
+      opacity: 0;
+    }
 
-  .alert {
-    animation: fade-inout 2s linear forwards;
+    50%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+
+
+  }
+.box{
+  position: absolute;
+}
+  .pesan {
+    animation: pesan 2s linear forwards;
     /* text-align: center; */
     color: green;
   }
+  .nama{
+    animation: nama 3s alternate;
+    /* text-align: center; */
+    color: black;
+
+  }
+  .nama_unset{
+    /* text-align: center; */
+    color: black;
+
+  }
+  
 </style>
   <!-- <body> -->
     <div class="container">
-    <div class="header">
       <h1>Activity</h1>
-      <!-- <a href="../../backend/auth/Logout.php"><i class="fa-solid fa-right-from-bracket fa-lg"></i>Logout</a> -->
-    </div>
-    <p>Hi ,<?php echo $_SESSION['username'] ?></p>
-    <div class="alert">
-      <?php if (isset($_SESSION['status'])) {
-        echo $_SESSION['status'];
-      } ?>
-    </div>
-    <?php unset($_SESSION['status']); ?>
+        <div class="box pesan"><?php if (isset($_SESSION['status'])) {echo $_SESSION['status'];} ?></div>
+        <!-- <div class="box nama"> <p >Hi ,<?php echo $_SESSION['username'] ?></p></div> -->
+        <?php unset($_SESSION['status']); echo ' <div class="box nama"> <p >Hi ,'.$_SESSION["username"].'</p></div>'; ?>
     <form action="../../backend/proses/activity_proses.php" method="post" enctype="multipart/form-data">
       <!-- Form Judul -->
       <label for="">Judul</label>
@@ -61,7 +78,7 @@ if (!isset($_SESSION['username'])) {
       <!-- Form Gambar -->
       <label for="file_name">Gambar</label>
         <input type="file" name="gambar" id="gambar">
-      <p><strong>Note:</strong> Only .jpg, .jpeg, .gif, .png formats allowed to a max size of 5 MB.</p>
+      <p><strong>Note:</strong> Hanya format .jpg, .jpeg, .gif, .png yang diizinkan hingga ukuran maksimal 5 MB.</p>
       <br>  
       <!-- Form Deskripsi -->
       <label for="">Deskripsi</label>

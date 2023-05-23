@@ -29,6 +29,8 @@
       </div>
       <ul class="navbar-menu">
         <li><a href="../index.php">Home</a></li>
+        <li><a href="../admin/index.php">Activity</a></li>
+        <li><a href="../admin/profil.php">Profil</a></li>
         <li><a></a></li>
         <!-- <li><a>Hi ,<?php echo $_SESSION['username'] ?></a></li> -->
         <li><a href="../../backend/auth/Logout.php"><i class="fa-solid fa-right-from-bracket fa-lg"></i> Logout</a></li>

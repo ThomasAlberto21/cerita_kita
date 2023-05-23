@@ -104,6 +104,14 @@ form label {
   font-weight: 600;
   margin-bottom: 5px;
 }
+.form_login {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 11pt;
+  margin-bottom: 20px;
+}
+
 
 form input {
   border: 2px solid black;
@@ -144,4 +152,15 @@ form button {
   text-align: center;
   padding: 12px 0;
   font-size: 10px;
+}
+
+.hide_show {
+  text-align: right;
+  margin-top: -55px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.hide_show i {
+  color: black;
 }

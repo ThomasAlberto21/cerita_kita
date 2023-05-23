@@ -1,8 +1,17 @@
+<?php 
+session_start();
+session_destroy();
+// header('location:../../../frontend/index.php');
+?>
 <?php include 'section/header.php';?>
 
     <!-- About -->
+        <div id="#home">
+      </div>
     <div class="container">
-    <div class="about_section">
+      <!-- <div id="otherElement">Content</a> -->
+
+    <div id="about" class="about_section">
       <div class="left">
         <div class="about">
           <h1>ABOUT</h1>
@@ -44,7 +53,7 @@
 </div>
     <!-- Activity -->
 
-    <div class="activity">
+    <div id="activity" class="activity">
       <div class="container">
       <div class="title">
         <h1>ACTIVITY</h1>

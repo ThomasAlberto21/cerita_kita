@@ -21,16 +21,17 @@
     <title>Cerita Kita</title>
   </head>
   <body>
+    <a id="home"></a>
     <!-- Navbar -->
     <div class="navbar">
       <div class="navbar-logo">
         <a href="#">Cerita Kita</a>
       </div>
       <ul class="navbar-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Activity</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#activity">Activity</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger-menu">
         <div class="bar"></div>
@@ -39,12 +40,15 @@
       </div>
     </div>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-      <div class="title">
-        <h1>Cerita Kita</h1>
-        <h2>Melangkah ke satu tujuan</h2>
-        <p>Pulang membawa pesan</p>
-        <button ><a href="#">Learn More</a></button>
+      
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <div class="title">
+          <h1>Cerita Kita</h1>
+          <h2>Melangkah ke satu tujuan</h2>
+          <p>Pulang membawa pesan</p>
+          <div class="header">
+            <a href="#about">Learn More</a>
+          </div>
+        </div>
       </div>
-    </div>

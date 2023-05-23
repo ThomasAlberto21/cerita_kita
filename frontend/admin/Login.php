@@ -33,9 +33,7 @@
         <br />
         <br />
         <button type="submit" name="login" class="LoginButton">Login</button>
-      </form>
-
-      <a href="Register.php">Belum Punya Akun?</a>
+      </form> 
     </div>
 
     <!-- Script JS -->
