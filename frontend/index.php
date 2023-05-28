@@ -65,6 +65,7 @@ session_destroy();
       <div class="carousel-container">
         <div class="carousel">
          <?php
+          setlocale(LC_ALL, 'IND');
           include '../backend/conn.php';
           $data = mysqli_query($conn,"select * from activity");
           while($d = mysqli_fetch_array($data)){
@@ -72,7 +73,8 @@ session_destroy();
           <div class="card">
             <img src="<?php echo $d['foto']?>" style= "width: 350px; height: 180px; object-fit: cover;border-radius: 8px;" alt="Card Image" />
             <h3><?php echo $d['judul']?></h3>
-            <h5><?php echo $d['tanggal']?></h5>
+            <h5><?php 
+            echo strftime("%A , %d %h %Y", strtotime($d['tanggal']));?></h5>
             <p>
              <?php echo $d['keterangan']?>
             </p>

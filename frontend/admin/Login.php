@@ -24,9 +24,9 @@
       <h1>Login</h1>
       <form action="../../backend/auth/login_Proses.php" method="POST">
         <label>Username</label>
-        <input id="username" type="text" name="username" class="form_login" placeholder="Username" required/>
+        <input id="username" type="text" name="username" class="form_login" placeholder="Username" required autofocus/>
         <label>Password</label>
-        <input id="password" type="password" name="password" class="form_login" placeholder="Enter Your Password" required/>
+        <input id="password" type="password" name="password" class="form_login" placeholder="Enter Your Password" required autofocus/>
         <div class="hide_show" onclick="change()">
           <i class="fa-solid fa-eye" id="eye"></i>
         </div>

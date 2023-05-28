@@ -29,13 +29,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             } else{
                 if(move_uploaded_file($_FILES["gambar"]["tmp_name"], "../../frontend/images/" . $filename)){
  
-                    $sql="INSERT INTO activity(judul,keterangan,tanggal,foto) VALUES('$judul','$tanggal','$keterangan','../images/$filename')";
+                    $sql="INSERT INTO activity(judul,keterangan,tanggal,foto) VALUES('$judul','$tanggal','$keterangan','images/$filename')";
                      
                     mysqli_query($conn,$sql);
- 
-                    echo "Your file was uploaded successfully.";
+
                     echo "<script>alert('Data Berhasil Ditambahkan');
-                    window.location.href='../../frontend/admin/Login.php';
+                    window.location.href='../../frontend/admin/index.php';
                     </script>";
                 }else{
  

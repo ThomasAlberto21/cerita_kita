@@ -69,7 +69,7 @@ if (!isset($_SESSION['username'])) {
     <form action="../../backend/proses/activity_proses.php" method="post" enctype="multipart/form-data">
       <!-- Form Judul -->
       <label for="">Judul</label>
-      <input type="text" name="judul" id="" placeholder="Masukkan Judul" />
+      <input type="text" name="judul" id="" placeholder="Masukkan Judul" require autofocus/>
       
       <!-- Form Tanggal -->
       <label for="">Tanggal</label>

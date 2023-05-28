@@ -51,20 +51,20 @@ $data=mysqli_fetch_array($query); //pecah datanya
       } ?>
     </div>
     <?php unset($_SESSION['status']); ?>
-    <form action="Password_Change.php" method="POST">
+    <form action="../../backend/auth/Password_Change.php" method="POST">
       <label>Email</label>
       <input id="email" type="text" name="email" class="form_login" disabled="disabled" value="<?php echo $data['email']; ?>">
       <label>Username</label>
       <input id="username" type="text" name="username" class="form_login" disabled="disabled" value="<?php echo $_SESSION['username']; ?>" require />
       <label>Password</label>
-      <input id="password" type="password" name="pass_old" class="form_login" placeholder="Masukan Password Lama" require />
+      <input id="password" type="password" name="pass_old" class="form_login" placeholder="Masukan Password Lama" require autofocus/>
       <div class="hide_show" onclick="change()">
         <i class="fa-solid fa-eye" id="eye"></i>
       </div>
       <br>
       <br>
       <label>New Password</label>
-      <input id="password" type="password" name="new_pass" class="form_login" placeholder="Masukan Password Baru" require />
+      <input id="password" type="password" name="new_pass" class="form_login" placeholder="Masukan Password Baru" require autofocus/>
       <div class="hide_show" onclick="change()">
         <i class="fa-solid fa-eye" id="eye"></i>
       </div>
