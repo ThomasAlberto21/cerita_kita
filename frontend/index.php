@@ -55,8 +55,9 @@ session_destroy();
     <div class="title">
       <h1>ACTIVITY</h1>
       <p>
-        The activities we carry out in the community <br />
-        cerita kita are as follows
+        Komunitas ini sudah sering mengikuti kegiatan seperti makrab antar KPA(Komunitas Pencinta Alam),
+        <br>
+        membersihkan tempat wisata, dan membantu melestarikan alam yang ada Serta masih banyak lagi.
       </p>
     </div>
     <div class="carousel-container">
