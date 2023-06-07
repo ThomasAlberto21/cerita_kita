@@ -26,8 +26,8 @@
     <div class="navbar-logo">
       <a href="#">Cerita Kita</a>
     </div>
-    <ul class="navbar-menu">
-      <li><a href="#home">Home</a></li>
+    <ul class="navbar-menu ">
+      <li><a class="" href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#activity">Activity</a></li>
       <li><a href="#contact">Contact</a></li>

@@ -69,7 +69,7 @@ session_destroy();
         while ($d = mysqli_fetch_array($data)) {
         ?>
           <div class="card">
-            <img src="<?php echo $d['foto'] ?>" style="width: 350px; height: 180px; object-fit: cover;border-radius: 8px;" alt="Card Image" />
+            <img src="<?php echo $d['foto'] ?>" style=" object-fit: cover;border-radius: 8px;" alt="Card Image" />
             <h3><?php echo $d['judul'] ?></h3>
             <h5><?php
                 echo strftime("%A , %d %h %Y", strtotime($d['tanggal'])); ?></h5>
